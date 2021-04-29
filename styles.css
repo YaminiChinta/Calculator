@@ -70,6 +70,9 @@ box-shadow: inset 1px 1px 2px #babeec,inset -1px -1px 2px #ffffff;
     background: red;
     color: white;
 }
+.equalbtn{
+    background: black;
+}
 .mathbutton{
     background:green;
     color: white
