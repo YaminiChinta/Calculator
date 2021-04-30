@@ -4,51 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
     <link type="text/css" rel="stylesheet" href="styles.css">
     <title>Calcualtor</title>
 </head>
 <body>
-    <h1>Calculator</h1>
-    <div id="container">
+    <h1>Calcualtor</h1>
+    <div class="">
+    <div id="container1">
         <div class="calculator-box">
-            <form name="calculator">
+            <form class="form-horizontal" name="calculator">
+                <div class="container-fluid">
                 <input id="display" type="text" name="display" placeholder="0" readonly>
-                                
-                <br>
-                <input type="button" value="C" onclick="calculator.display.value =''"  class="button clearbutton">                
-                <input type="button" value="%" onclick="calculator.display.value +='%'"  class="button mathbutton">
-                <input type="button" value="/" onclick="calculator.display.value +='/'"  class="button mathbutton">                
-                <input type="button" value="<=" onclick="dele()"  class="button delbutton">
-                <br>
-                <input type="button" value="7" onclick="calculator.display.value +='7'"  class="button">
-                <input type="button" value="8" onclick="calculator.display.value +='8'"  class="button">
-                <input type="button" value="9" onclick="calculator.display.value +='9'"  class="button">
-                <input type="button" value="x" onclick="calculator.display.value+='*'"  class="button mathbutton">
-                <br>
-                <input type="button" value="4" onclick="calculator.display.value +='4'"  class="button">
-                <input type="button" value="5" onclick="calculator.display.value +='5'"  class="button">
-                <input type="button" value="6" onclick="calculator.display.value +='6'"  class="button">
-                <input type="button" value="-" onclick="calculator.display.value +='-'"  class="button mathbutton">
-                <br>
-                <input type="button" value="1" onclick="calculator.display.value +='1'"  class="button">
-                <input type="button" value="2" onclick="calculator.display.value +='2'"  class="button">
-                <input type="button" value="3" onclick="calculator.display.value +='3'"  class="button">
-                <input type="button" value="+" onclick="calculator.display.value+='+'"  class="button mathbutton">
-                <br>
-                <input type="button" value="^" onclick="calculator.display.value +='**'"  class="button mathbutton">
-                <input type="button" value="0" onclick="calculator.display.value +='0'"  class="button">
-                <input type="button" value="." onclick="calculator.display.value +='.'"  class="button mathbutton">
-                <input type="button" value="=" onclick="calculator.display.value=eval(calculator.display.value)"  class="button mathbutton equalbtn">              
                 <br>
                 
+                <div class="row">
+                <div class="col-xs-3">
+                <input type="button" value="7" onclick="calculator.display.value +='7'"  class="button"></div>
+                <div class="col-xs-3">
+                <input type="button" value="8" onclick="calculator.display.value +='8'"  class="button"></div>
+                <div class="col-xs-3">
+                <input type="button" value="9" onclick="calculator.display.value +='9'"  class="button"></div>
+                <div class="col-xs-3">
+                <input type="button" value="C" onclick="calculator.display.value =''"  class="button clearbutton"></div>
+                <br>
+                </div>
+
+                <div class="row">
+                <div class="col-xs-3"><input type="button" value="4" onclick="calculator.display.value +='4'"  class="button"></div>
+                <div class="col-xs-3"><input type="button" value="5" onclick="calculator.display.value +='5'"  class="button"></div>
+                <div class="col-xs-3"><input type="button" value="6" onclick="calculator.display.value +='6'"  class="button"></div>
+                <div class="col-xs-3"><input type="button" value="-" onclick="calculator.display.value +='-'"  class="button mathbutton"></div>
+                <br>
+                </div>
+
+                <div class="row">
+                <div class="col-xs-3"><input type="button" value="1" onclick="calculator.display.value +='1'"  class="button"></div>
+                <div class="col-xs-3"><input type="button" value="2" onclick="calculator.display.value +='2'"  class="button"></div>
+                <div class="col-xs-3"><input type="button" value="3" onclick="calculator.display.value +='3'"  class="button"></div>
+                <div class="col-xs-3"><input type="button" value="x" onclick="calculator.display.value+='*'"  class="button mathbutton"></div>
+                <br>
+                </div>
+
+                <div class="row">
+                <div class="col-xs-3"><input type="button" value="+" onclick="calculator.display.value+='+'"  class="button mathbutton"></div>
+                <div class="col-xs-3"><input type="button" value="0" onclick="calculator.display.value +='0'"  class="button"></div>
+                <div class="col-xs-3"><input type="button" value="." onclick="calculator.display.value +='.'"  class="button mathbutton"></div>
+                <div class="col-xs-3"><input type="button" value="<=" onclick="dele()"  class="button delbutton"></div>
+                <br>
+                </div>
+
+                <div class="row">
+                <div class="col-xs-3"><input type="button" value="/" onclick="calculator.display.value +='/'"  class="button mathbutton"></div>
+                <div class="col-xs-3"><input type="button" value="^" onclick="calculator.display.value +='**'"  class="button mathbutton"></div>
+                <div class="col-xs-3"><input type="button" value="%" onclick="calculator.display.value +='%'"  class="button mathbutton"></div>
+                <div class="col-xs-3"><input type="button" value="=" onclick="calculate()"  class="button mathbutton equalbtn"></div>
+                <br>
+                </div>
+
+                </div>
             </form>
         </div>
     </div>
+</div>
     <script src="script.js" type="text/javascript"></script>
 </body>
 </html>
